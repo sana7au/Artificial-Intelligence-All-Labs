@@ -1,0 +1,19 @@
+# Handle text files automatically and normalize line endings to LF in the repo
+* text=auto
+
+# Explicitly declare files you want to force to LF (Unix/macOS format)
+*.js text eol=lf
+*.ts text eol=lf
+*.json text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.md text eol=lf
+
+# Explicitly declare files you want to force to CRLF (Windows format, if needed)
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Denote binary files (Git will not try to modify their line endings)
+*.png binary
+*.jpg binary
+*.gif binary
