@@ -1,5 +1,5 @@
 # List of percepts to test the room light agent
-percept_sequence = ["Dark", "Dim", "Bright", "Dark"]
+percept_sequence = ["Dark", "Dim", "Bright", "Dark", "Very Bright", "Dim"]
 
 # Function to determine action based on the percept
 def room_light_agent(percept):
@@ -9,6 +9,8 @@ def room_light_agent(percept):
         return "Turn Light OFF"
     elif percept == "Dim":
         return "Leave Light As Is"
+    elif percept == "Very Bright":
+        return "Turn Light OFF and Close Curtains"
     else:
         return "Unknown Percept"
 
