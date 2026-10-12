@@ -3,7 +3,8 @@ percept_sequence = [
     ("Room1", "Cold"),
     ("Room1", "Normal"),
     ("Room2", "Hot"),
-    ("Room2", "Normal")
+    ("Room2", "Normal"),
+    ("Room1", "Cold")
 ]
 
 # Store the last known reading of each room
