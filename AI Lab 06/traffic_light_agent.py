@@ -1,8 +1,8 @@
-# Table mapping traffic light colors to actions
-table = {"Red": "Stop", "Yellow": "Slow Down", "Green": "Go"}
+# Table mapping traffic light colors to actions + flashing light percept added
+table = {"Red": "Stop", "Yellow": "Slow Down", "Green": "Go", "Flashing Red": "Stop and proceed with caution"}
 
 # List of percepts to test the traffic light agent
-percept_sequence = ["Red", "Green", "Yellow", "Red"]
+percept_sequence = ["Red", "Green", "Yellow", "Red", "Flashing Red"]
 
 # Function to determine the action based on the percept
 def traffic_light_agent(percept):
