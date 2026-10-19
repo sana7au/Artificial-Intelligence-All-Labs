@@ -35,7 +35,6 @@ if path:
 else:
     print("No connection found between Ali and Hira.")
 
-
 network["Hira"].append("Usman")
 network["Usman"] = ["Hira"]
 
