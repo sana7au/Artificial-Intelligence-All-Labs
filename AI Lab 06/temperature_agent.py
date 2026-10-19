@@ -1,4 +1,4 @@
-# Given sequence of percepts
+﻿# Given sequence of percepts
 percept_sequence = [
     ("Room1", "Cold"),
     ("Room1", "Normal"),
