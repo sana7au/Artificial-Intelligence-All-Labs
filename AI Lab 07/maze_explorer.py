@@ -35,3 +35,8 @@ def dfs_can_reach(maze, start, exit_room):
 
 result = dfs_can_reach(maze, "Entrance", "Exit")
 print("Can reach Exit from Entrance?", result)
+
+maze["SecretRoom"] = ["SecretRoom2"]
+maze["SecretRoom2"] = []
+
+print("Updated maze:", maze)
