@@ -7,9 +7,11 @@ flights = {
     "Quetta": [],
 }
 
+# Calculate the total cost of a given path
 def path_cost(path):
     return sum(cost for _, cost in path)
 
+# UCS Algorithm to find the cheapest route
 def ucs_cheapest_route(graph, start, goal):
     visited = []
     queue = [[(start, 0)]]
