@@ -1,3 +1,4 @@
+# Dictionary to represent warehouse locations with distances
 warehouse = {
     "Receiving": {"Aisle1": 40, "Aisle2": 70},
     "Aisle1": {"Aisle2": 30, "Packing Station": 90},
@@ -5,13 +6,13 @@ warehouse = {
     "Packing Station": {}
 }
 
+# Heuristic cost of nodes
 heuristic = {
     "Receiving": 100,
     "Aisle1": 70,
     "Aisle2": 35,
     "Packing Station": 0
 }
-
 
 def get_g(path):
     total = 0
@@ -21,15 +22,12 @@ def get_g(path):
         total = total + warehouse[current_node][next_node]
     return total
 
-
 def get_h(path):
     last_node = path[-1]
     return heuristic[last_node]
 
-
 def get_f(path):
     return get_g(path) + get_h(path)
-
 
 def a_star(start, goal):
     frontier = [[start]]
