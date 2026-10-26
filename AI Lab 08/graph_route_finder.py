@@ -35,15 +35,19 @@ def get_f(path):
 
 def a_star(start, goal):
     frontier = [[start]]
+    explored = 0
 
     while len(frontier) > 0:
         frontier.sort(key=get_f)
         path = frontier.pop(0)
         node = path[-1]
+        
+        explored = explored + 1
 
         if node == goal:
             print("Path found by A*:", path)
             print("Total cost of this path:", get_g(path))
+            print("Total nodes explored:", explored)
             return path
 
         for neighbour in graph[node]:
@@ -51,6 +55,5 @@ def a_star(start, goal):
             frontier.append(new_path)
 
     return None
-
 
 a_star("S", "G")
