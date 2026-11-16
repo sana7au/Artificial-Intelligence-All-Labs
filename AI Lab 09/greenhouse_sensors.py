@@ -28,3 +28,6 @@ np.random.seed(7)
 readings2 = np.random.randint(20, 41, size=(6, 3))
 
 print("Reproducible:", np.array_equal(readings, readings2))
+
+# Print the overall hottest sensor reading
+print("Overall hottest reading:", readings.max())
