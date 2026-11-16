@@ -21,3 +21,6 @@ print("Accuracy:", round(accuracy, 2))
 
 mse = np.mean((w_true - w_pred) ** 2)
 print("MSE:", mse)
+
+# Display samples classified incorrectly
+print("Wrongly predicted samples:", np.where(y_pred != y_test)[0])
