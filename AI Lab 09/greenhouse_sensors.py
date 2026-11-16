@@ -31,3 +31,5 @@ print("Reproducible:", np.array_equal(readings, readings2))
 
 # Print the overall hottest sensor reading
 print("Overall hottest reading:", readings.max())
+
+# Display the highest temperature recorded by all sensors
